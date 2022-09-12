@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// Fórmula de Bhaskara, 12/09/2022
 public class Main {
 
 	public static void main(String[] args) {
