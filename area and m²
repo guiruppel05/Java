@@ -1,0 +1,28 @@
+import java.util.Locale;
+import java.util.Scanner;
+// Área e preço/m², 12/09/2022.
+public class main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Qual a largura do terreno?");
+		double largura = sc.nextDouble();
+		System.out.println("Qual o comprimento do terreno?");
+		double comprimento = sc.nextDouble();
+		System.out.println("Qual o valor do m²?");
+		double metroQuadrado = sc.nextDouble();
+	
+		double area = largura * comprimento;
+		double preco = area * metroQuadrado;
+		
+		System.out.printf("A área do terreno é %.2f m². %n", area);
+		System.out.printf("O preço do terreno é R$ %.2f.", preco);
+		
+		sc.close();
+	}
+
+
+}
